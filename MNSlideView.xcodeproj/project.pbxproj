@@ -21,6 +21,8 @@
 		B61CFAA31978E5C900E27607 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61CFA851978E5C900E27607 /* UIKit.framework */; };
 		B61CFAAB1978E5C900E27607 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B61CFAA91978E5C900E27607 /* InfoPlist.strings */; };
 		B61CFAAD1978E5C900E27607 /* MNSlideViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B61CFAAC1978E5C900E27607 /* MNSlideViewTests.m */; };
+		B6243A1419836F7800D68E1A /* MNRootScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6243A1119836F7800D68E1A /* MNRootScrollView.m */; };
+		B6243A1519836F7800D68E1A /* MNTopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6243A1319836F7800D68E1A /* MNTopScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		B61CFAA81978E5C900E27607 /* MNSlideViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MNSlideViewTests-Info.plist"; sourceTree = "<group>"; };
 		B61CFAAA1978E5C900E27607 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B61CFAAC1978E5C900E27607 /* MNSlideViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNSlideViewTests.m; sourceTree = "<group>"; };
+		B6243A1019836F7800D68E1A /* MNRootScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNRootScrollView.h; sourceTree = "<group>"; };
+		B6243A1119836F7800D68E1A /* MNRootScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNRootScrollView.m; sourceTree = "<group>"; };
+		B6243A1219836F7800D68E1A /* MNTopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNTopScrollView.h; sourceTree = "<group>"; };
+		B6243A1319836F7800D68E1A /* MNTopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNTopScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 		B61CFA871978E5C900E27607 /* MNSlideView */ = {
 			isa = PBXGroup;
 			children = (
+				B6243A1019836F7800D68E1A /* MNRootScrollView.h */,
+				B6243A1119836F7800D68E1A /* MNRootScrollView.m */,
+				B6243A1219836F7800D68E1A /* MNTopScrollView.h */,
+				B6243A1319836F7800D68E1A /* MNTopScrollView.m */,
 				B61CFA901978E5C900E27607 /* AppDelegate.h */,
 				B61CFA911978E5C900E27607 /* AppDelegate.m */,
 				B61CFA931978E5C900E27607 /* Main.storyboard */,
@@ -251,7 +261,9 @@
 			files = (
 				B61CFA981978E5C900E27607 /* ViewController.m in Sources */,
 				B61CFA921978E5C900E27607 /* AppDelegate.m in Sources */,
+				B6243A1419836F7800D68E1A /* MNRootScrollView.m in Sources */,
 				B61CFA8E1978E5C900E27607 /* main.m in Sources */,
+				B6243A1519836F7800D68E1A /* MNTopScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MNSlideView/MNSlideView-Prefix.pch";
 				INFOPLIST_FILE = "MNSlideView/MNSlideView-Info.plist";
@@ -391,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MNSlideView/MNSlideView-Prefix.pch";
 				INFOPLIST_FILE = "MNSlideView/MNSlideView-Info.plist";
@@ -460,6 +474,7 @@
 				B61CFAB21978E5C900E27607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B61CFAB31978E5C900E27607 /* Build configuration list for PBXNativeTarget "MNSlideViewTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +483,7 @@
 				B61CFAB51978E5C900E27607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
